@@ -2,11 +2,14 @@
 
 set -e
 
+# See: https://github.com/swagger-api/swagger-codegen/releases
 swgversion=2.2.0
 
+# See: https://github.com/kubernetes/kubernetes/releases
 k8sversion=$1
 test -n "$k8sversion"
 
+# Choose for yourself
 pkgversion=$2
 test -n "$pkgversion"
 
