@@ -1,4 +1,4 @@
-(defproject kubernetes "1.4.6-0.0.2"
+(defproject kubernetes "1.5.5-0.0.1"
   :description "Clojure API bindings for Kubernetes"
   :url "https://github.com/devurandom/clj-kubernetes"
   :license {:name "Apache License"

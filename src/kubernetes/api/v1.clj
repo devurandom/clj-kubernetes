@@ -21,9 +21,9 @@
   ([namespace name optional-params]
    (:data (connect-delete-namespaced-pod-proxy-with-http-info namespace name optional-params))))
 
-(defn connect-delete-namespaced-pod-proxy_0-with-http-info
+(defn connect-delete-namespaced-pod-proxy-with-path-with-http-info
   "connect DELETE requests to proxy of Pod"
-  ([namespace name path2 ] (connect-delete-namespaced-pod-proxy_0-with-http-info namespace name path2 nil))
+  ([namespace name path2 ] (connect-delete-namespaced-pod-proxy-with-path-with-http-info namespace name path2 nil))
   ([namespace name path2 {:keys [path ]}]
    (call-api "/api/v1/namespaces/{namespace}/pods/{name}/proxy/{path}" :delete
              {:path-params   {"namespace" namespace "name" name "path" path2 }
@@ -34,11 +34,11 @@
               :accepts       ["*/*"]
               :auth-names    []})))
 
-(defn connect-delete-namespaced-pod-proxy_0
+(defn connect-delete-namespaced-pod-proxy-with-path
   "connect DELETE requests to proxy of Pod"
-  ([namespace name path2 ] (connect-delete-namespaced-pod-proxy_0 namespace name path2 nil))
+  ([namespace name path2 ] (connect-delete-namespaced-pod-proxy-with-path namespace name path2 nil))
   ([namespace name path2 optional-params]
-   (:data (connect-delete-namespaced-pod-proxy_0-with-http-info namespace name path2 optional-params))))
+   (:data (connect-delete-namespaced-pod-proxy-with-path-with-http-info namespace name path2 optional-params))))
 
 (defn connect-delete-namespaced-service-proxy-with-http-info
   "connect DELETE requests to proxy of Service"
@@ -59,9 +59,9 @@
   ([namespace name optional-params]
    (:data (connect-delete-namespaced-service-proxy-with-http-info namespace name optional-params))))
 
-(defn connect-delete-namespaced-service-proxy_0-with-http-info
+(defn connect-delete-namespaced-service-proxy-with-path-with-http-info
   "connect DELETE requests to proxy of Service"
-  ([namespace name path2 ] (connect-delete-namespaced-service-proxy_0-with-http-info namespace name path2 nil))
+  ([namespace name path2 ] (connect-delete-namespaced-service-proxy-with-path-with-http-info namespace name path2 nil))
   ([namespace name path2 {:keys [path ]}]
    (call-api "/api/v1/namespaces/{namespace}/services/{name}/proxy/{path}" :delete
              {:path-params   {"namespace" namespace "name" name "path" path2 }
@@ -72,11 +72,11 @@
               :accepts       ["*/*"]
               :auth-names    []})))
 
-(defn connect-delete-namespaced-service-proxy_0
+(defn connect-delete-namespaced-service-proxy-with-path
   "connect DELETE requests to proxy of Service"
-  ([namespace name path2 ] (connect-delete-namespaced-service-proxy_0 namespace name path2 nil))
+  ([namespace name path2 ] (connect-delete-namespaced-service-proxy-with-path namespace name path2 nil))
   ([namespace name path2 optional-params]
-   (:data (connect-delete-namespaced-service-proxy_0-with-http-info namespace name path2 optional-params))))
+   (:data (connect-delete-namespaced-service-proxy-with-path-with-http-info namespace name path2 optional-params))))
 
 (defn connect-delete-node-proxy-with-http-info
   "connect DELETE requests to proxy of Node"
@@ -97,9 +97,9 @@
   ([name optional-params]
    (:data (connect-delete-node-proxy-with-http-info name optional-params))))
 
-(defn connect-delete-node-proxy_0-with-http-info
+(defn connect-delete-node-proxy-with-path-with-http-info
   "connect DELETE requests to proxy of Node"
-  ([name path2 ] (connect-delete-node-proxy_0-with-http-info name path2 nil))
+  ([name path2 ] (connect-delete-node-proxy-with-path-with-http-info name path2 nil))
   ([name path2 {:keys [path ]}]
    (call-api "/api/v1/nodes/{name}/proxy/{path}" :delete
              {:path-params   {"name" name "path" path2 }
@@ -110,11 +110,11 @@
               :accepts       ["*/*"]
               :auth-names    []})))
 
-(defn connect-delete-node-proxy_0
+(defn connect-delete-node-proxy-with-path
   "connect DELETE requests to proxy of Node"
-  ([name path2 ] (connect-delete-node-proxy_0 name path2 nil))
+  ([name path2 ] (connect-delete-node-proxy-with-path name path2 nil))
   ([name path2 optional-params]
-   (:data (connect-delete-node-proxy_0-with-http-info name path2 optional-params))))
+   (:data (connect-delete-node-proxy-with-path-with-http-info name path2 optional-params))))
 
 (defn connect-get-namespaced-pod-attach-with-http-info
   "connect GET requests to attach of Pod"
@@ -190,9 +190,9 @@
   ([namespace name optional-params]
    (:data (connect-get-namespaced-pod-proxy-with-http-info namespace name optional-params))))
 
-(defn connect-get-namespaced-pod-proxy_0-with-http-info
+(defn connect-get-namespaced-pod-proxy-with-path-with-http-info
   "connect GET requests to proxy of Pod"
-  ([namespace name path2 ] (connect-get-namespaced-pod-proxy_0-with-http-info namespace name path2 nil))
+  ([namespace name path2 ] (connect-get-namespaced-pod-proxy-with-path-with-http-info namespace name path2 nil))
   ([namespace name path2 {:keys [path ]}]
    (call-api "/api/v1/namespaces/{namespace}/pods/{name}/proxy/{path}" :get
              {:path-params   {"namespace" namespace "name" name "path" path2 }
@@ -203,11 +203,11 @@
               :accepts       ["*/*"]
               :auth-names    []})))
 
-(defn connect-get-namespaced-pod-proxy_0
+(defn connect-get-namespaced-pod-proxy-with-path
   "connect GET requests to proxy of Pod"
-  ([namespace name path2 ] (connect-get-namespaced-pod-proxy_0 namespace name path2 nil))
+  ([namespace name path2 ] (connect-get-namespaced-pod-proxy-with-path namespace name path2 nil))
   ([namespace name path2 optional-params]
-   (:data (connect-get-namespaced-pod-proxy_0-with-http-info namespace name path2 optional-params))))
+   (:data (connect-get-namespaced-pod-proxy-with-path-with-http-info namespace name path2 optional-params))))
 
 (defn connect-get-namespaced-service-proxy-with-http-info
   "connect GET requests to proxy of Service"
@@ -228,9 +228,9 @@
   ([namespace name optional-params]
    (:data (connect-get-namespaced-service-proxy-with-http-info namespace name optional-params))))
 
-(defn connect-get-namespaced-service-proxy_0-with-http-info
+(defn connect-get-namespaced-service-proxy-with-path-with-http-info
   "connect GET requests to proxy of Service"
-  ([namespace name path2 ] (connect-get-namespaced-service-proxy_0-with-http-info namespace name path2 nil))
+  ([namespace name path2 ] (connect-get-namespaced-service-proxy-with-path-with-http-info namespace name path2 nil))
   ([namespace name path2 {:keys [path ]}]
    (call-api "/api/v1/namespaces/{namespace}/services/{name}/proxy/{path}" :get
              {:path-params   {"namespace" namespace "name" name "path" path2 }
@@ -241,11 +241,11 @@
               :accepts       ["*/*"]
               :auth-names    []})))
 
-(defn connect-get-namespaced-service-proxy_0
+(defn connect-get-namespaced-service-proxy-with-path
   "connect GET requests to proxy of Service"
-  ([namespace name path2 ] (connect-get-namespaced-service-proxy_0 namespace name path2 nil))
+  ([namespace name path2 ] (connect-get-namespaced-service-proxy-with-path namespace name path2 nil))
   ([namespace name path2 optional-params]
-   (:data (connect-get-namespaced-service-proxy_0-with-http-info namespace name path2 optional-params))))
+   (:data (connect-get-namespaced-service-proxy-with-path-with-http-info namespace name path2 optional-params))))
 
 (defn connect-get-node-proxy-with-http-info
   "connect GET requests to proxy of Node"
@@ -266,9 +266,9 @@
   ([name optional-params]
    (:data (connect-get-node-proxy-with-http-info name optional-params))))
 
-(defn connect-get-node-proxy_0-with-http-info
+(defn connect-get-node-proxy-with-path-with-http-info
   "connect GET requests to proxy of Node"
-  ([name path2 ] (connect-get-node-proxy_0-with-http-info name path2 nil))
+  ([name path2 ] (connect-get-node-proxy-with-path-with-http-info name path2 nil))
   ([name path2 {:keys [path ]}]
    (call-api "/api/v1/nodes/{name}/proxy/{path}" :get
              {:path-params   {"name" name "path" path2 }
@@ -279,11 +279,11 @@
               :accepts       ["*/*"]
               :auth-names    []})))
 
-(defn connect-get-node-proxy_0
+(defn connect-get-node-proxy-with-path
   "connect GET requests to proxy of Node"
-  ([name path2 ] (connect-get-node-proxy_0 name path2 nil))
+  ([name path2 ] (connect-get-node-proxy-with-path name path2 nil))
   ([name path2 optional-params]
-   (:data (connect-get-node-proxy_0-with-http-info name path2 optional-params))))
+   (:data (connect-get-node-proxy-with-path-with-http-info name path2 optional-params))))
 
 (defn connect-head-namespaced-pod-proxy-with-http-info
   "connect HEAD requests to proxy of Pod"
@@ -304,9 +304,9 @@
   ([namespace name optional-params]
    (:data (connect-head-namespaced-pod-proxy-with-http-info namespace name optional-params))))
 
-(defn connect-head-namespaced-pod-proxy_0-with-http-info
+(defn connect-head-namespaced-pod-proxy-with-path-with-http-info
   "connect HEAD requests to proxy of Pod"
-  ([namespace name path2 ] (connect-head-namespaced-pod-proxy_0-with-http-info namespace name path2 nil))
+  ([namespace name path2 ] (connect-head-namespaced-pod-proxy-with-path-with-http-info namespace name path2 nil))
   ([namespace name path2 {:keys [path ]}]
    (call-api "/api/v1/namespaces/{namespace}/pods/{name}/proxy/{path}" :head
              {:path-params   {"namespace" namespace "name" name "path" path2 }
@@ -317,11 +317,11 @@
               :accepts       ["*/*"]
               :auth-names    []})))
 
-(defn connect-head-namespaced-pod-proxy_0
+(defn connect-head-namespaced-pod-proxy-with-path
   "connect HEAD requests to proxy of Pod"
-  ([namespace name path2 ] (connect-head-namespaced-pod-proxy_0 namespace name path2 nil))
+  ([namespace name path2 ] (connect-head-namespaced-pod-proxy-with-path namespace name path2 nil))
   ([namespace name path2 optional-params]
-   (:data (connect-head-namespaced-pod-proxy_0-with-http-info namespace name path2 optional-params))))
+   (:data (connect-head-namespaced-pod-proxy-with-path-with-http-info namespace name path2 optional-params))))
 
 (defn connect-head-namespaced-service-proxy-with-http-info
   "connect HEAD requests to proxy of Service"
@@ -342,9 +342,9 @@
   ([namespace name optional-params]
    (:data (connect-head-namespaced-service-proxy-with-http-info namespace name optional-params))))
 
-(defn connect-head-namespaced-service-proxy_0-with-http-info
+(defn connect-head-namespaced-service-proxy-with-path-with-http-info
   "connect HEAD requests to proxy of Service"
-  ([namespace name path2 ] (connect-head-namespaced-service-proxy_0-with-http-info namespace name path2 nil))
+  ([namespace name path2 ] (connect-head-namespaced-service-proxy-with-path-with-http-info namespace name path2 nil))
   ([namespace name path2 {:keys [path ]}]
    (call-api "/api/v1/namespaces/{namespace}/services/{name}/proxy/{path}" :head
              {:path-params   {"namespace" namespace "name" name "path" path2 }
@@ -355,11 +355,11 @@
               :accepts       ["*/*"]
               :auth-names    []})))
 
-(defn connect-head-namespaced-service-proxy_0
+(defn connect-head-namespaced-service-proxy-with-path
   "connect HEAD requests to proxy of Service"
-  ([namespace name path2 ] (connect-head-namespaced-service-proxy_0 namespace name path2 nil))
+  ([namespace name path2 ] (connect-head-namespaced-service-proxy-with-path namespace name path2 nil))
   ([namespace name path2 optional-params]
-   (:data (connect-head-namespaced-service-proxy_0-with-http-info namespace name path2 optional-params))))
+   (:data (connect-head-namespaced-service-proxy-with-path-with-http-info namespace name path2 optional-params))))
 
 (defn connect-head-node-proxy-with-http-info
   "connect HEAD requests to proxy of Node"
@@ -380,9 +380,9 @@
   ([name optional-params]
    (:data (connect-head-node-proxy-with-http-info name optional-params))))
 
-(defn connect-head-node-proxy_0-with-http-info
+(defn connect-head-node-proxy-with-path-with-http-info
   "connect HEAD requests to proxy of Node"
-  ([name path2 ] (connect-head-node-proxy_0-with-http-info name path2 nil))
+  ([name path2 ] (connect-head-node-proxy-with-path-with-http-info name path2 nil))
   ([name path2 {:keys [path ]}]
    (call-api "/api/v1/nodes/{name}/proxy/{path}" :head
              {:path-params   {"name" name "path" path2 }
@@ -393,11 +393,11 @@
               :accepts       ["*/*"]
               :auth-names    []})))
 
-(defn connect-head-node-proxy_0
+(defn connect-head-node-proxy-with-path
   "connect HEAD requests to proxy of Node"
-  ([name path2 ] (connect-head-node-proxy_0 name path2 nil))
+  ([name path2 ] (connect-head-node-proxy-with-path name path2 nil))
   ([name path2 optional-params]
-   (:data (connect-head-node-proxy_0-with-http-info name path2 optional-params))))
+   (:data (connect-head-node-proxy-with-path-with-http-info name path2 optional-params))))
 
 (defn connect-options-namespaced-pod-proxy-with-http-info
   "connect OPTIONS requests to proxy of Pod"
@@ -418,9 +418,9 @@
   ([namespace name optional-params]
    (:data (connect-options-namespaced-pod-proxy-with-http-info namespace name optional-params))))
 
-(defn connect-options-namespaced-pod-proxy_0-with-http-info
+(defn connect-options-namespaced-pod-proxy-with-path-with-http-info
   "connect OPTIONS requests to proxy of Pod"
-  ([namespace name path2 ] (connect-options-namespaced-pod-proxy_0-with-http-info namespace name path2 nil))
+  ([namespace name path2 ] (connect-options-namespaced-pod-proxy-with-path-with-http-info namespace name path2 nil))
   ([namespace name path2 {:keys [path ]}]
    (call-api "/api/v1/namespaces/{namespace}/pods/{name}/proxy/{path}" :options
              {:path-params   {"namespace" namespace "name" name "path" path2 }
@@ -431,11 +431,11 @@
               :accepts       ["*/*"]
               :auth-names    []})))
 
-(defn connect-options-namespaced-pod-proxy_0
+(defn connect-options-namespaced-pod-proxy-with-path
   "connect OPTIONS requests to proxy of Pod"
-  ([namespace name path2 ] (connect-options-namespaced-pod-proxy_0 namespace name path2 nil))
+  ([namespace name path2 ] (connect-options-namespaced-pod-proxy-with-path namespace name path2 nil))
   ([namespace name path2 optional-params]
-   (:data (connect-options-namespaced-pod-proxy_0-with-http-info namespace name path2 optional-params))))
+   (:data (connect-options-namespaced-pod-proxy-with-path-with-http-info namespace name path2 optional-params))))
 
 (defn connect-options-namespaced-service-proxy-with-http-info
   "connect OPTIONS requests to proxy of Service"
@@ -456,9 +456,9 @@
   ([namespace name optional-params]
    (:data (connect-options-namespaced-service-proxy-with-http-info namespace name optional-params))))
 
-(defn connect-options-namespaced-service-proxy_0-with-http-info
+(defn connect-options-namespaced-service-proxy-with-path-with-http-info
   "connect OPTIONS requests to proxy of Service"
-  ([namespace name path2 ] (connect-options-namespaced-service-proxy_0-with-http-info namespace name path2 nil))
+  ([namespace name path2 ] (connect-options-namespaced-service-proxy-with-path-with-http-info namespace name path2 nil))
   ([namespace name path2 {:keys [path ]}]
    (call-api "/api/v1/namespaces/{namespace}/services/{name}/proxy/{path}" :options
              {:path-params   {"namespace" namespace "name" name "path" path2 }
@@ -469,11 +469,11 @@
               :accepts       ["*/*"]
               :auth-names    []})))
 
-(defn connect-options-namespaced-service-proxy_0
+(defn connect-options-namespaced-service-proxy-with-path
   "connect OPTIONS requests to proxy of Service"
-  ([namespace name path2 ] (connect-options-namespaced-service-proxy_0 namespace name path2 nil))
+  ([namespace name path2 ] (connect-options-namespaced-service-proxy-with-path namespace name path2 nil))
   ([namespace name path2 optional-params]
-   (:data (connect-options-namespaced-service-proxy_0-with-http-info namespace name path2 optional-params))))
+   (:data (connect-options-namespaced-service-proxy-with-path-with-http-info namespace name path2 optional-params))))
 
 (defn connect-options-node-proxy-with-http-info
   "connect OPTIONS requests to proxy of Node"
@@ -494,9 +494,9 @@
   ([name optional-params]
    (:data (connect-options-node-proxy-with-http-info name optional-params))))
 
-(defn connect-options-node-proxy_0-with-http-info
+(defn connect-options-node-proxy-with-path-with-http-info
   "connect OPTIONS requests to proxy of Node"
-  ([name path2 ] (connect-options-node-proxy_0-with-http-info name path2 nil))
+  ([name path2 ] (connect-options-node-proxy-with-path-with-http-info name path2 nil))
   ([name path2 {:keys [path ]}]
    (call-api "/api/v1/nodes/{name}/proxy/{path}" :options
              {:path-params   {"name" name "path" path2 }
@@ -507,11 +507,11 @@
               :accepts       ["*/*"]
               :auth-names    []})))
 
-(defn connect-options-node-proxy_0
+(defn connect-options-node-proxy-with-path
   "connect OPTIONS requests to proxy of Node"
-  ([name path2 ] (connect-options-node-proxy_0 name path2 nil))
+  ([name path2 ] (connect-options-node-proxy-with-path name path2 nil))
   ([name path2 optional-params]
-   (:data (connect-options-node-proxy_0-with-http-info name path2 optional-params))))
+   (:data (connect-options-node-proxy-with-path-with-http-info name path2 optional-params))))
 
 (defn connect-post-namespaced-pod-attach-with-http-info
   "connect POST requests to attach of Pod"
@@ -587,9 +587,9 @@
   ([namespace name optional-params]
    (:data (connect-post-namespaced-pod-proxy-with-http-info namespace name optional-params))))
 
-(defn connect-post-namespaced-pod-proxy_0-with-http-info
+(defn connect-post-namespaced-pod-proxy-with-path-with-http-info
   "connect POST requests to proxy of Pod"
-  ([namespace name path2 ] (connect-post-namespaced-pod-proxy_0-with-http-info namespace name path2 nil))
+  ([namespace name path2 ] (connect-post-namespaced-pod-proxy-with-path-with-http-info namespace name path2 nil))
   ([namespace name path2 {:keys [path ]}]
    (call-api "/api/v1/namespaces/{namespace}/pods/{name}/proxy/{path}" :post
              {:path-params   {"namespace" namespace "name" name "path" path2 }
@@ -600,11 +600,11 @@
               :accepts       ["*/*"]
               :auth-names    []})))
 
-(defn connect-post-namespaced-pod-proxy_0
+(defn connect-post-namespaced-pod-proxy-with-path
   "connect POST requests to proxy of Pod"
-  ([namespace name path2 ] (connect-post-namespaced-pod-proxy_0 namespace name path2 nil))
+  ([namespace name path2 ] (connect-post-namespaced-pod-proxy-with-path namespace name path2 nil))
   ([namespace name path2 optional-params]
-   (:data (connect-post-namespaced-pod-proxy_0-with-http-info namespace name path2 optional-params))))
+   (:data (connect-post-namespaced-pod-proxy-with-path-with-http-info namespace name path2 optional-params))))
 
 (defn connect-post-namespaced-service-proxy-with-http-info
   "connect POST requests to proxy of Service"
@@ -625,9 +625,9 @@
   ([namespace name optional-params]
    (:data (connect-post-namespaced-service-proxy-with-http-info namespace name optional-params))))
 
-(defn connect-post-namespaced-service-proxy_0-with-http-info
+(defn connect-post-namespaced-service-proxy-with-path-with-http-info
   "connect POST requests to proxy of Service"
-  ([namespace name path2 ] (connect-post-namespaced-service-proxy_0-with-http-info namespace name path2 nil))
+  ([namespace name path2 ] (connect-post-namespaced-service-proxy-with-path-with-http-info namespace name path2 nil))
   ([namespace name path2 {:keys [path ]}]
    (call-api "/api/v1/namespaces/{namespace}/services/{name}/proxy/{path}" :post
              {:path-params   {"namespace" namespace "name" name "path" path2 }
@@ -638,11 +638,11 @@
               :accepts       ["*/*"]
               :auth-names    []})))
 
-(defn connect-post-namespaced-service-proxy_0
+(defn connect-post-namespaced-service-proxy-with-path
   "connect POST requests to proxy of Service"
-  ([namespace name path2 ] (connect-post-namespaced-service-proxy_0 namespace name path2 nil))
+  ([namespace name path2 ] (connect-post-namespaced-service-proxy-with-path namespace name path2 nil))
   ([namespace name path2 optional-params]
-   (:data (connect-post-namespaced-service-proxy_0-with-http-info namespace name path2 optional-params))))
+   (:data (connect-post-namespaced-service-proxy-with-path-with-http-info namespace name path2 optional-params))))
 
 (defn connect-post-node-proxy-with-http-info
   "connect POST requests to proxy of Node"
@@ -663,9 +663,9 @@
   ([name optional-params]
    (:data (connect-post-node-proxy-with-http-info name optional-params))))
 
-(defn connect-post-node-proxy_0-with-http-info
+(defn connect-post-node-proxy-with-path-with-http-info
   "connect POST requests to proxy of Node"
-  ([name path2 ] (connect-post-node-proxy_0-with-http-info name path2 nil))
+  ([name path2 ] (connect-post-node-proxy-with-path-with-http-info name path2 nil))
   ([name path2 {:keys [path ]}]
    (call-api "/api/v1/nodes/{name}/proxy/{path}" :post
              {:path-params   {"name" name "path" path2 }
@@ -676,11 +676,11 @@
               :accepts       ["*/*"]
               :auth-names    []})))
 
-(defn connect-post-node-proxy_0
+(defn connect-post-node-proxy-with-path
   "connect POST requests to proxy of Node"
-  ([name path2 ] (connect-post-node-proxy_0 name path2 nil))
+  ([name path2 ] (connect-post-node-proxy-with-path name path2 nil))
   ([name path2 optional-params]
-   (:data (connect-post-node-proxy_0-with-http-info name path2 optional-params))))
+   (:data (connect-post-node-proxy-with-path-with-http-info name path2 optional-params))))
 
 (defn connect-put-namespaced-pod-proxy-with-http-info
   "connect PUT requests to proxy of Pod"
@@ -701,9 +701,9 @@
   ([namespace name optional-params]
    (:data (connect-put-namespaced-pod-proxy-with-http-info namespace name optional-params))))
 
-(defn connect-put-namespaced-pod-proxy_0-with-http-info
+(defn connect-put-namespaced-pod-proxy-with-path-with-http-info
   "connect PUT requests to proxy of Pod"
-  ([namespace name path2 ] (connect-put-namespaced-pod-proxy_0-with-http-info namespace name path2 nil))
+  ([namespace name path2 ] (connect-put-namespaced-pod-proxy-with-path-with-http-info namespace name path2 nil))
   ([namespace name path2 {:keys [path ]}]
    (call-api "/api/v1/namespaces/{namespace}/pods/{name}/proxy/{path}" :put
              {:path-params   {"namespace" namespace "name" name "path" path2 }
@@ -714,11 +714,11 @@
               :accepts       ["*/*"]
               :auth-names    []})))
 
-(defn connect-put-namespaced-pod-proxy_0
+(defn connect-put-namespaced-pod-proxy-with-path
   "connect PUT requests to proxy of Pod"
-  ([namespace name path2 ] (connect-put-namespaced-pod-proxy_0 namespace name path2 nil))
+  ([namespace name path2 ] (connect-put-namespaced-pod-proxy-with-path namespace name path2 nil))
   ([namespace name path2 optional-params]
-   (:data (connect-put-namespaced-pod-proxy_0-with-http-info namespace name path2 optional-params))))
+   (:data (connect-put-namespaced-pod-proxy-with-path-with-http-info namespace name path2 optional-params))))
 
 (defn connect-put-namespaced-service-proxy-with-http-info
   "connect PUT requests to proxy of Service"
@@ -739,9 +739,9 @@
   ([namespace name optional-params]
    (:data (connect-put-namespaced-service-proxy-with-http-info namespace name optional-params))))
 
-(defn connect-put-namespaced-service-proxy_0-with-http-info
+(defn connect-put-namespaced-service-proxy-with-path-with-http-info
   "connect PUT requests to proxy of Service"
-  ([namespace name path2 ] (connect-put-namespaced-service-proxy_0-with-http-info namespace name path2 nil))
+  ([namespace name path2 ] (connect-put-namespaced-service-proxy-with-path-with-http-info namespace name path2 nil))
   ([namespace name path2 {:keys [path ]}]
    (call-api "/api/v1/namespaces/{namespace}/services/{name}/proxy/{path}" :put
              {:path-params   {"namespace" namespace "name" name "path" path2 }
@@ -752,11 +752,11 @@
               :accepts       ["*/*"]
               :auth-names    []})))
 
-(defn connect-put-namespaced-service-proxy_0
+(defn connect-put-namespaced-service-proxy-with-path
   "connect PUT requests to proxy of Service"
-  ([namespace name path2 ] (connect-put-namespaced-service-proxy_0 namespace name path2 nil))
+  ([namespace name path2 ] (connect-put-namespaced-service-proxy-with-path namespace name path2 nil))
   ([namespace name path2 optional-params]
-   (:data (connect-put-namespaced-service-proxy_0-with-http-info namespace name path2 optional-params))))
+   (:data (connect-put-namespaced-service-proxy-with-path-with-http-info namespace name path2 optional-params))))
 
 (defn connect-put-node-proxy-with-http-info
   "connect PUT requests to proxy of Node"
@@ -777,9 +777,9 @@
   ([name optional-params]
    (:data (connect-put-node-proxy-with-http-info name optional-params))))
 
-(defn connect-put-node-proxy_0-with-http-info
+(defn connect-put-node-proxy-with-path-with-http-info
   "connect PUT requests to proxy of Node"
-  ([name path2 ] (connect-put-node-proxy_0-with-http-info name path2 nil))
+  ([name path2 ] (connect-put-node-proxy-with-path-with-http-info name path2 nil))
   ([name path2 {:keys [path ]}]
    (call-api "/api/v1/nodes/{name}/proxy/{path}" :put
              {:path-params   {"name" name "path" path2 }
@@ -790,11 +790,11 @@
               :accepts       ["*/*"]
               :auth-names    []})))
 
-(defn connect-put-node-proxy_0
+(defn connect-put-node-proxy-with-path
   "connect PUT requests to proxy of Node"
-  ([name path2 ] (connect-put-node-proxy_0 name path2 nil))
+  ([name path2 ] (connect-put-node-proxy-with-path name path2 nil))
   ([name path2 optional-params]
-   (:data (connect-put-node-proxy_0-with-http-info name path2 optional-params))))
+   (:data (connect-put-node-proxy-with-path-with-http-info name path2 optional-params))))
 
 (defn create-namespace-with-http-info
   "create a Namespace"
@@ -877,7 +877,7 @@
    (:data (create-namespaced-config-map-with-http-info body namespace optional-params))))
 
 (defn create-namespaced-endpoints-with-http-info
-  "create a Endpoints"
+  "create Endpoints"
   ([body namespace ] (create-namespaced-endpoints-with-http-info body namespace nil))
   ([body namespace {:keys [pretty ]}]
    (call-api "/api/v1/namespaces/{namespace}/endpoints" :post
@@ -891,13 +891,13 @@
               :auth-names    []})))
 
 (defn create-namespaced-endpoints
-  "create a Endpoints"
+  "create Endpoints"
   ([body namespace ] (create-namespaced-endpoints body namespace nil))
   ([body namespace optional-params]
    (:data (create-namespaced-endpoints-with-http-info body namespace optional-params))))
 
 (defn create-namespaced-event-with-http-info
-  "create a Event"
+  "create an Event"
   ([body namespace ] (create-namespaced-event-with-http-info body namespace nil))
   ([body namespace {:keys [pretty ]}]
    (call-api "/api/v1/namespaces/{namespace}/events" :post
@@ -911,13 +911,13 @@
               :auth-names    []})))
 
 (defn create-namespaced-event
-  "create a Event"
+  "create an Event"
   ([body namespace ] (create-namespaced-event body namespace nil))
   ([body namespace optional-params]
    (:data (create-namespaced-event-with-http-info body namespace optional-params))))
 
 (defn create-namespaced-eviction-eviction-with-http-info
-  "create eviction of a Eviction"
+  "create eviction of an Eviction"
   ([body namespace name ] (create-namespaced-eviction-eviction-with-http-info body namespace name nil))
   ([body namespace name {:keys [pretty ]}]
    (call-api "/api/v1/namespaces/{namespace}/pods/{name}/eviction" :post
@@ -931,7 +931,7 @@
               :auth-names    []})))
 
 (defn create-namespaced-eviction-eviction
-  "create eviction of a Eviction"
+  "create eviction of an Eviction"
   ([body namespace name ] (create-namespaced-eviction-eviction body namespace name nil))
   ([body namespace name optional-params]
    (:data (create-namespaced-eviction-eviction-with-http-info body namespace name optional-params))))
@@ -1197,7 +1197,7 @@
    (:data (delete-namespaced-config-map-with-http-info body namespace name optional-params))))
 
 (defn delete-namespaced-endpoints-with-http-info
-  "delete a Endpoints"
+  "delete Endpoints"
   ([body namespace name ] (delete-namespaced-endpoints-with-http-info body namespace name nil))
   ([body namespace name {:keys [pretty grace-period-seconds orphan-dependents ]}]
    (call-api "/api/v1/namespaces/{namespace}/endpoints/{name}" :delete
@@ -1211,13 +1211,13 @@
               :auth-names    []})))
 
 (defn delete-namespaced-endpoints
-  "delete a Endpoints"
+  "delete Endpoints"
   ([body namespace name ] (delete-namespaced-endpoints body namespace name nil))
   ([body namespace name optional-params]
    (:data (delete-namespaced-endpoints-with-http-info body namespace name optional-params))))
 
 (defn delete-namespaced-event-with-http-info
-  "delete a Event"
+  "delete an Event"
   ([body namespace name ] (delete-namespaced-event-with-http-info body namespace name nil))
   ([body namespace name {:keys [pretty grace-period-seconds orphan-dependents ]}]
    (call-api "/api/v1/namespaces/{namespace}/events/{name}" :delete
@@ -1231,7 +1231,7 @@
               :auth-names    []})))
 
 (defn delete-namespaced-event
-  "delete a Event"
+  "delete an Event"
   ([body namespace name ] (delete-namespaced-event body namespace name nil))
   ([body namespace name optional-params]
    (:data (delete-namespaced-event-with-http-info body namespace name optional-params))))
@@ -1748,7 +1748,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn list-component-status
@@ -1756,6 +1756,82 @@
   ([] (list-component-status nil))
   ([optional-params]
    (:data (list-component-status-with-http-info optional-params))))
+
+(defn list-config-map-for-all-namespaces-with-http-info
+  "list or watch objects of kind ConfigMap"
+  ([] (list-config-map-for-all-namespaces-with-http-info nil))
+  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
+   (call-api "/api/v1/configmaps" :get
+             {:path-params   {}
+              :header-params {}
+              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
+              :form-params   {}
+              :content-types ["*/*"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :auth-names    []})))
+
+(defn list-config-map-for-all-namespaces
+  "list or watch objects of kind ConfigMap"
+  ([] (list-config-map-for-all-namespaces nil))
+  ([optional-params]
+   (:data (list-config-map-for-all-namespaces-with-http-info optional-params))))
+
+(defn list-endpoints-for-all-namespaces-with-http-info
+  "list or watch objects of kind Endpoints"
+  ([] (list-endpoints-for-all-namespaces-with-http-info nil))
+  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
+   (call-api "/api/v1/endpoints" :get
+             {:path-params   {}
+              :header-params {}
+              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
+              :form-params   {}
+              :content-types ["*/*"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :auth-names    []})))
+
+(defn list-endpoints-for-all-namespaces
+  "list or watch objects of kind Endpoints"
+  ([] (list-endpoints-for-all-namespaces nil))
+  ([optional-params]
+   (:data (list-endpoints-for-all-namespaces-with-http-info optional-params))))
+
+(defn list-event-for-all-namespaces-with-http-info
+  "list or watch objects of kind Event"
+  ([] (list-event-for-all-namespaces-with-http-info nil))
+  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
+   (call-api "/api/v1/events" :get
+             {:path-params   {}
+              :header-params {}
+              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
+              :form-params   {}
+              :content-types ["*/*"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :auth-names    []})))
+
+(defn list-event-for-all-namespaces
+  "list or watch objects of kind Event"
+  ([] (list-event-for-all-namespaces nil))
+  ([optional-params]
+   (:data (list-event-for-all-namespaces-with-http-info optional-params))))
+
+(defn list-limit-range-for-all-namespaces-with-http-info
+  "list or watch objects of kind LimitRange"
+  ([] (list-limit-range-for-all-namespaces-with-http-info nil))
+  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
+   (call-api "/api/v1/limitranges" :get
+             {:path-params   {}
+              :header-params {}
+              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
+              :form-params   {}
+              :content-types ["*/*"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :auth-names    []})))
+
+(defn list-limit-range-for-all-namespaces
+  "list or watch objects of kind LimitRange"
+  ([] (list-limit-range-for-all-namespaces nil))
+  ([optional-params]
+   (:data (list-limit-range-for-all-namespaces-with-http-info optional-params))))
 
 (defn list-namespace-with-http-info
   "list or watch objects of kind Namespace"
@@ -1767,7 +1843,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn list-namespace
@@ -1778,26 +1854,7 @@
 
 (defn list-namespaced-config-map-with-http-info
   "list or watch objects of kind ConfigMap"
-  ([] (list-namespaced-config-map-with-http-info nil))
-  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
-   (call-api "/api/v1/configmaps" :get
-             {:path-params   {}
-              :header-params {}
-              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
-              :form-params   {}
-              :content-types ["*/*"]
-              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf"]
-              :auth-names    []})))
-
-(defn list-namespaced-config-map
-  "list or watch objects of kind ConfigMap"
-  ([] (list-namespaced-config-map nil))
-  ([optional-params]
-   (:data (list-namespaced-config-map-with-http-info optional-params))))
-
-(defn list-namespaced-config-map_0-with-http-info
-  "list or watch objects of kind ConfigMap"
-  ([namespace ] (list-namespaced-config-map_0-with-http-info namespace nil))
+  ([namespace ] (list-namespaced-config-map-with-http-info namespace nil))
   ([namespace {:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
    (call-api "/api/v1/namespaces/{namespace}/configmaps" :get
              {:path-params   {"namespace" namespace }
@@ -1805,37 +1862,18 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
-(defn list-namespaced-config-map_0
+(defn list-namespaced-config-map
   "list or watch objects of kind ConfigMap"
-  ([namespace ] (list-namespaced-config-map_0 namespace nil))
+  ([namespace ] (list-namespaced-config-map namespace nil))
   ([namespace optional-params]
-   (:data (list-namespaced-config-map_0-with-http-info namespace optional-params))))
+   (:data (list-namespaced-config-map-with-http-info namespace optional-params))))
 
 (defn list-namespaced-endpoints-with-http-info
   "list or watch objects of kind Endpoints"
-  ([] (list-namespaced-endpoints-with-http-info nil))
-  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
-   (call-api "/api/v1/endpoints" :get
-             {:path-params   {}
-              :header-params {}
-              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
-              :form-params   {}
-              :content-types ["*/*"]
-              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf"]
-              :auth-names    []})))
-
-(defn list-namespaced-endpoints
-  "list or watch objects of kind Endpoints"
-  ([] (list-namespaced-endpoints nil))
-  ([optional-params]
-   (:data (list-namespaced-endpoints-with-http-info optional-params))))
-
-(defn list-namespaced-endpoints_0-with-http-info
-  "list or watch objects of kind Endpoints"
-  ([namespace ] (list-namespaced-endpoints_0-with-http-info namespace nil))
+  ([namespace ] (list-namespaced-endpoints-with-http-info namespace nil))
   ([namespace {:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
    (call-api "/api/v1/namespaces/{namespace}/endpoints" :get
              {:path-params   {"namespace" namespace }
@@ -1843,37 +1881,18 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
-(defn list-namespaced-endpoints_0
+(defn list-namespaced-endpoints
   "list or watch objects of kind Endpoints"
-  ([namespace ] (list-namespaced-endpoints_0 namespace nil))
+  ([namespace ] (list-namespaced-endpoints namespace nil))
   ([namespace optional-params]
-   (:data (list-namespaced-endpoints_0-with-http-info namespace optional-params))))
+   (:data (list-namespaced-endpoints-with-http-info namespace optional-params))))
 
 (defn list-namespaced-event-with-http-info
   "list or watch objects of kind Event"
-  ([] (list-namespaced-event-with-http-info nil))
-  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
-   (call-api "/api/v1/events" :get
-             {:path-params   {}
-              :header-params {}
-              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
-              :form-params   {}
-              :content-types ["*/*"]
-              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf"]
-              :auth-names    []})))
-
-(defn list-namespaced-event
-  "list or watch objects of kind Event"
-  ([] (list-namespaced-event nil))
-  ([optional-params]
-   (:data (list-namespaced-event-with-http-info optional-params))))
-
-(defn list-namespaced-event_0-with-http-info
-  "list or watch objects of kind Event"
-  ([namespace ] (list-namespaced-event_0-with-http-info namespace nil))
+  ([namespace ] (list-namespaced-event-with-http-info namespace nil))
   ([namespace {:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
    (call-api "/api/v1/namespaces/{namespace}/events" :get
              {:path-params   {"namespace" namespace }
@@ -1881,37 +1900,18 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
-(defn list-namespaced-event_0
+(defn list-namespaced-event
   "list or watch objects of kind Event"
-  ([namespace ] (list-namespaced-event_0 namespace nil))
+  ([namespace ] (list-namespaced-event namespace nil))
   ([namespace optional-params]
-   (:data (list-namespaced-event_0-with-http-info namespace optional-params))))
+   (:data (list-namespaced-event-with-http-info namespace optional-params))))
 
 (defn list-namespaced-limit-range-with-http-info
   "list or watch objects of kind LimitRange"
-  ([] (list-namespaced-limit-range-with-http-info nil))
-  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
-   (call-api "/api/v1/limitranges" :get
-             {:path-params   {}
-              :header-params {}
-              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
-              :form-params   {}
-              :content-types ["*/*"]
-              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf"]
-              :auth-names    []})))
-
-(defn list-namespaced-limit-range
-  "list or watch objects of kind LimitRange"
-  ([] (list-namespaced-limit-range nil))
-  ([optional-params]
-   (:data (list-namespaced-limit-range-with-http-info optional-params))))
-
-(defn list-namespaced-limit-range_0-with-http-info
-  "list or watch objects of kind LimitRange"
-  ([namespace ] (list-namespaced-limit-range_0-with-http-info namespace nil))
+  ([namespace ] (list-namespaced-limit-range-with-http-info namespace nil))
   ([namespace {:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
    (call-api "/api/v1/namespaces/{namespace}/limitranges" :get
              {:path-params   {"namespace" namespace }
@@ -1919,14 +1919,14 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
-(defn list-namespaced-limit-range_0
+(defn list-namespaced-limit-range
   "list or watch objects of kind LimitRange"
-  ([namespace ] (list-namespaced-limit-range_0 namespace nil))
+  ([namespace ] (list-namespaced-limit-range namespace nil))
   ([namespace optional-params]
-   (:data (list-namespaced-limit-range_0-with-http-info namespace optional-params))))
+   (:data (list-namespaced-limit-range-with-http-info namespace optional-params))))
 
 (defn list-namespaced-persistent-volume-claim-with-http-info
   "list or watch objects of kind PersistentVolumeClaim"
@@ -1938,7 +1938,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn list-namespaced-persistent-volume-claim
@@ -1946,25 +1946,6 @@
   ([namespace ] (list-namespaced-persistent-volume-claim namespace nil))
   ([namespace optional-params]
    (:data (list-namespaced-persistent-volume-claim-with-http-info namespace optional-params))))
-
-(defn list-namespaced-persistent-volume-claim_0-with-http-info
-  "list or watch objects of kind PersistentVolumeClaim"
-  ([] (list-namespaced-persistent-volume-claim_0-with-http-info nil))
-  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
-   (call-api "/api/v1/persistentvolumeclaims" :get
-             {:path-params   {}
-              :header-params {}
-              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
-              :form-params   {}
-              :content-types ["*/*"]
-              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf"]
-              :auth-names    []})))
-
-(defn list-namespaced-persistent-volume-claim_0
-  "list or watch objects of kind PersistentVolumeClaim"
-  ([] (list-namespaced-persistent-volume-claim_0 nil))
-  ([optional-params]
-   (:data (list-namespaced-persistent-volume-claim_0-with-http-info optional-params))))
 
 (defn list-namespaced-pod-with-http-info
   "list or watch objects of kind Pod"
@@ -1976,7 +1957,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn list-namespaced-pod
@@ -1995,7 +1976,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn list-namespaced-pod-template
@@ -2003,44 +1984,6 @@
   ([namespace ] (list-namespaced-pod-template namespace nil))
   ([namespace optional-params]
    (:data (list-namespaced-pod-template-with-http-info namespace optional-params))))
-
-(defn list-namespaced-pod-template_0-with-http-info
-  "list or watch objects of kind PodTemplate"
-  ([] (list-namespaced-pod-template_0-with-http-info nil))
-  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
-   (call-api "/api/v1/podtemplates" :get
-             {:path-params   {}
-              :header-params {}
-              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
-              :form-params   {}
-              :content-types ["*/*"]
-              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf"]
-              :auth-names    []})))
-
-(defn list-namespaced-pod-template_0
-  "list or watch objects of kind PodTemplate"
-  ([] (list-namespaced-pod-template_0 nil))
-  ([optional-params]
-   (:data (list-namespaced-pod-template_0-with-http-info optional-params))))
-
-(defn list-namespaced-pod_0-with-http-info
-  "list or watch objects of kind Pod"
-  ([] (list-namespaced-pod_0-with-http-info nil))
-  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
-   (call-api "/api/v1/pods" :get
-             {:path-params   {}
-              :header-params {}
-              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
-              :form-params   {}
-              :content-types ["*/*"]
-              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf"]
-              :auth-names    []})))
-
-(defn list-namespaced-pod_0
-  "list or watch objects of kind Pod"
-  ([] (list-namespaced-pod_0 nil))
-  ([optional-params]
-   (:data (list-namespaced-pod_0-with-http-info optional-params))))
 
 (defn list-namespaced-replication-controller-with-http-info
   "list or watch objects of kind ReplicationController"
@@ -2052,7 +1995,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn list-namespaced-replication-controller
@@ -2060,25 +2003,6 @@
   ([namespace ] (list-namespaced-replication-controller namespace nil))
   ([namespace optional-params]
    (:data (list-namespaced-replication-controller-with-http-info namespace optional-params))))
-
-(defn list-namespaced-replication-controller_0-with-http-info
-  "list or watch objects of kind ReplicationController"
-  ([] (list-namespaced-replication-controller_0-with-http-info nil))
-  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
-   (call-api "/api/v1/replicationcontrollers" :get
-             {:path-params   {}
-              :header-params {}
-              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
-              :form-params   {}
-              :content-types ["*/*"]
-              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf"]
-              :auth-names    []})))
-
-(defn list-namespaced-replication-controller_0
-  "list or watch objects of kind ReplicationController"
-  ([] (list-namespaced-replication-controller_0 nil))
-  ([optional-params]
-   (:data (list-namespaced-replication-controller_0-with-http-info optional-params))))
 
 (defn list-namespaced-resource-quota-with-http-info
   "list or watch objects of kind ResourceQuota"
@@ -2090,7 +2014,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn list-namespaced-resource-quota
@@ -2098,25 +2022,6 @@
   ([namespace ] (list-namespaced-resource-quota namespace nil))
   ([namespace optional-params]
    (:data (list-namespaced-resource-quota-with-http-info namespace optional-params))))
-
-(defn list-namespaced-resource-quota_0-with-http-info
-  "list or watch objects of kind ResourceQuota"
-  ([] (list-namespaced-resource-quota_0-with-http-info nil))
-  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
-   (call-api "/api/v1/resourcequotas" :get
-             {:path-params   {}
-              :header-params {}
-              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
-              :form-params   {}
-              :content-types ["*/*"]
-              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf"]
-              :auth-names    []})))
-
-(defn list-namespaced-resource-quota_0
-  "list or watch objects of kind ResourceQuota"
-  ([] (list-namespaced-resource-quota_0 nil))
-  ([optional-params]
-   (:data (list-namespaced-resource-quota_0-with-http-info optional-params))))
 
 (defn list-namespaced-secret-with-http-info
   "list or watch objects of kind Secret"
@@ -2128,7 +2033,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn list-namespaced-secret
@@ -2136,25 +2041,6 @@
   ([namespace ] (list-namespaced-secret namespace nil))
   ([namespace optional-params]
    (:data (list-namespaced-secret-with-http-info namespace optional-params))))
-
-(defn list-namespaced-secret_0-with-http-info
-  "list or watch objects of kind Secret"
-  ([] (list-namespaced-secret_0-with-http-info nil))
-  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
-   (call-api "/api/v1/secrets" :get
-             {:path-params   {}
-              :header-params {}
-              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
-              :form-params   {}
-              :content-types ["*/*"]
-              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf"]
-              :auth-names    []})))
-
-(defn list-namespaced-secret_0
-  "list or watch objects of kind Secret"
-  ([] (list-namespaced-secret_0 nil))
-  ([optional-params]
-   (:data (list-namespaced-secret_0-with-http-info optional-params))))
 
 (defn list-namespaced-service-with-http-info
   "list or watch objects of kind Service"
@@ -2166,7 +2052,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn list-namespaced-service
@@ -2185,7 +2071,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn list-namespaced-service-account
@@ -2193,44 +2079,6 @@
   ([namespace ] (list-namespaced-service-account namespace nil))
   ([namespace optional-params]
    (:data (list-namespaced-service-account-with-http-info namespace optional-params))))
-
-(defn list-namespaced-service-account_0-with-http-info
-  "list or watch objects of kind ServiceAccount"
-  ([] (list-namespaced-service-account_0-with-http-info nil))
-  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
-   (call-api "/api/v1/serviceaccounts" :get
-             {:path-params   {}
-              :header-params {}
-              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
-              :form-params   {}
-              :content-types ["*/*"]
-              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf"]
-              :auth-names    []})))
-
-(defn list-namespaced-service-account_0
-  "list or watch objects of kind ServiceAccount"
-  ([] (list-namespaced-service-account_0 nil))
-  ([optional-params]
-   (:data (list-namespaced-service-account_0-with-http-info optional-params))))
-
-(defn list-namespaced-service_0-with-http-info
-  "list or watch objects of kind Service"
-  ([] (list-namespaced-service_0-with-http-info nil))
-  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
-   (call-api "/api/v1/services" :get
-             {:path-params   {}
-              :header-params {}
-              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
-              :form-params   {}
-              :content-types ["*/*"]
-              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf"]
-              :auth-names    []})))
-
-(defn list-namespaced-service_0
-  "list or watch objects of kind Service"
-  ([] (list-namespaced-service_0 nil))
-  ([optional-params]
-   (:data (list-namespaced-service_0-with-http-info optional-params))))
 
 (defn list-node-with-http-info
   "list or watch objects of kind Node"
@@ -2242,7 +2090,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn list-node
@@ -2261,7 +2109,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn list-persistent-volume
@@ -2269,6 +2117,158 @@
   ([] (list-persistent-volume nil))
   ([optional-params]
    (:data (list-persistent-volume-with-http-info optional-params))))
+
+(defn list-persistent-volume-claim-for-all-namespaces-with-http-info
+  "list or watch objects of kind PersistentVolumeClaim"
+  ([] (list-persistent-volume-claim-for-all-namespaces-with-http-info nil))
+  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
+   (call-api "/api/v1/persistentvolumeclaims" :get
+             {:path-params   {}
+              :header-params {}
+              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
+              :form-params   {}
+              :content-types ["*/*"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :auth-names    []})))
+
+(defn list-persistent-volume-claim-for-all-namespaces
+  "list or watch objects of kind PersistentVolumeClaim"
+  ([] (list-persistent-volume-claim-for-all-namespaces nil))
+  ([optional-params]
+   (:data (list-persistent-volume-claim-for-all-namespaces-with-http-info optional-params))))
+
+(defn list-pod-for-all-namespaces-with-http-info
+  "list or watch objects of kind Pod"
+  ([] (list-pod-for-all-namespaces-with-http-info nil))
+  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
+   (call-api "/api/v1/pods" :get
+             {:path-params   {}
+              :header-params {}
+              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
+              :form-params   {}
+              :content-types ["*/*"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :auth-names    []})))
+
+(defn list-pod-for-all-namespaces
+  "list or watch objects of kind Pod"
+  ([] (list-pod-for-all-namespaces nil))
+  ([optional-params]
+   (:data (list-pod-for-all-namespaces-with-http-info optional-params))))
+
+(defn list-pod-template-for-all-namespaces-with-http-info
+  "list or watch objects of kind PodTemplate"
+  ([] (list-pod-template-for-all-namespaces-with-http-info nil))
+  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
+   (call-api "/api/v1/podtemplates" :get
+             {:path-params   {}
+              :header-params {}
+              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
+              :form-params   {}
+              :content-types ["*/*"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :auth-names    []})))
+
+(defn list-pod-template-for-all-namespaces
+  "list or watch objects of kind PodTemplate"
+  ([] (list-pod-template-for-all-namespaces nil))
+  ([optional-params]
+   (:data (list-pod-template-for-all-namespaces-with-http-info optional-params))))
+
+(defn list-replication-controller-for-all-namespaces-with-http-info
+  "list or watch objects of kind ReplicationController"
+  ([] (list-replication-controller-for-all-namespaces-with-http-info nil))
+  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
+   (call-api "/api/v1/replicationcontrollers" :get
+             {:path-params   {}
+              :header-params {}
+              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
+              :form-params   {}
+              :content-types ["*/*"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :auth-names    []})))
+
+(defn list-replication-controller-for-all-namespaces
+  "list or watch objects of kind ReplicationController"
+  ([] (list-replication-controller-for-all-namespaces nil))
+  ([optional-params]
+   (:data (list-replication-controller-for-all-namespaces-with-http-info optional-params))))
+
+(defn list-resource-quota-for-all-namespaces-with-http-info
+  "list or watch objects of kind ResourceQuota"
+  ([] (list-resource-quota-for-all-namespaces-with-http-info nil))
+  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
+   (call-api "/api/v1/resourcequotas" :get
+             {:path-params   {}
+              :header-params {}
+              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
+              :form-params   {}
+              :content-types ["*/*"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :auth-names    []})))
+
+(defn list-resource-quota-for-all-namespaces
+  "list or watch objects of kind ResourceQuota"
+  ([] (list-resource-quota-for-all-namespaces nil))
+  ([optional-params]
+   (:data (list-resource-quota-for-all-namespaces-with-http-info optional-params))))
+
+(defn list-secret-for-all-namespaces-with-http-info
+  "list or watch objects of kind Secret"
+  ([] (list-secret-for-all-namespaces-with-http-info nil))
+  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
+   (call-api "/api/v1/secrets" :get
+             {:path-params   {}
+              :header-params {}
+              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
+              :form-params   {}
+              :content-types ["*/*"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :auth-names    []})))
+
+(defn list-secret-for-all-namespaces
+  "list or watch objects of kind Secret"
+  ([] (list-secret-for-all-namespaces nil))
+  ([optional-params]
+   (:data (list-secret-for-all-namespaces-with-http-info optional-params))))
+
+(defn list-service-account-for-all-namespaces-with-http-info
+  "list or watch objects of kind ServiceAccount"
+  ([] (list-service-account-for-all-namespaces-with-http-info nil))
+  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
+   (call-api "/api/v1/serviceaccounts" :get
+             {:path-params   {}
+              :header-params {}
+              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
+              :form-params   {}
+              :content-types ["*/*"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :auth-names    []})))
+
+(defn list-service-account-for-all-namespaces
+  "list or watch objects of kind ServiceAccount"
+  ([] (list-service-account-for-all-namespaces nil))
+  ([optional-params]
+   (:data (list-service-account-for-all-namespaces-with-http-info optional-params))))
+
+(defn list-service-for-all-namespaces-with-http-info
+  "list or watch objects of kind Service"
+  ([] (list-service-for-all-namespaces-with-http-info nil))
+  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
+   (call-api "/api/v1/services" :get
+             {:path-params   {}
+              :header-params {}
+              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
+              :form-params   {}
+              :content-types ["*/*"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :auth-names    []})))
+
+(defn list-service-for-all-namespaces
+  "list or watch objects of kind Service"
+  ([] (list-service-for-all-namespaces nil))
+  ([optional-params]
+   (:data (list-service-for-all-namespaces-with-http-info optional-params))))
 
 (defn patch-namespace-with-http-info
   "partially update the specified Namespace"
@@ -2767,7 +2767,7 @@
   [namespace name ]
   (:data (proxy-delete-namespaced-pod-with-http-info namespace name)))
 
-(defn proxy-delete-namespaced-pod_0-with-http-info
+(defn proxy-delete-namespaced-pod-with-path-with-http-info
   "proxy DELETE requests to Pod"
   [namespace name path ]
   (call-api "/api/v1/proxy/namespaces/{namespace}/pods/{name}/{path}" :delete
@@ -2779,10 +2779,10 @@
              :accepts       ["*/*"]
              :auth-names    []}))
 
-(defn proxy-delete-namespaced-pod_0
+(defn proxy-delete-namespaced-pod-with-path
   "proxy DELETE requests to Pod"
   [namespace name path ]
-  (:data (proxy-delete-namespaced-pod_0-with-http-info namespace name path)))
+  (:data (proxy-delete-namespaced-pod-with-path-with-http-info namespace name path)))
 
 (defn proxy-delete-namespaced-service-with-http-info
   "proxy DELETE requests to Service"
@@ -2801,7 +2801,7 @@
   [namespace name ]
   (:data (proxy-delete-namespaced-service-with-http-info namespace name)))
 
-(defn proxy-delete-namespaced-service_0-with-http-info
+(defn proxy-delete-namespaced-service-with-path-with-http-info
   "proxy DELETE requests to Service"
   [namespace name path ]
   (call-api "/api/v1/proxy/namespaces/{namespace}/services/{name}/{path}" :delete
@@ -2813,10 +2813,10 @@
              :accepts       ["*/*"]
              :auth-names    []}))
 
-(defn proxy-delete-namespaced-service_0
+(defn proxy-delete-namespaced-service-with-path
   "proxy DELETE requests to Service"
   [namespace name path ]
-  (:data (proxy-delete-namespaced-service_0-with-http-info namespace name path)))
+  (:data (proxy-delete-namespaced-service-with-path-with-http-info namespace name path)))
 
 (defn proxy-delete-node-with-http-info
   "proxy DELETE requests to Node"
@@ -2835,7 +2835,7 @@
   [name ]
   (:data (proxy-delete-node-with-http-info name)))
 
-(defn proxy-delete-node_0-with-http-info
+(defn proxy-delete-node-with-path-with-http-info
   "proxy DELETE requests to Node"
   [name path ]
   (call-api "/api/v1/proxy/nodes/{name}/{path}" :delete
@@ -2847,10 +2847,10 @@
              :accepts       ["*/*"]
              :auth-names    []}))
 
-(defn proxy-delete-node_0
+(defn proxy-delete-node-with-path
   "proxy DELETE requests to Node"
   [name path ]
-  (:data (proxy-delete-node_0-with-http-info name path)))
+  (:data (proxy-delete-node-with-path-with-http-info name path)))
 
 (defn proxy-get-namespaced-pod-with-http-info
   "proxy GET requests to Pod"
@@ -2869,7 +2869,7 @@
   [namespace name ]
   (:data (proxy-get-namespaced-pod-with-http-info namespace name)))
 
-(defn proxy-get-namespaced-pod_0-with-http-info
+(defn proxy-get-namespaced-pod-with-path-with-http-info
   "proxy GET requests to Pod"
   [namespace name path ]
   (call-api "/api/v1/proxy/namespaces/{namespace}/pods/{name}/{path}" :get
@@ -2881,10 +2881,10 @@
              :accepts       ["*/*"]
              :auth-names    []}))
 
-(defn proxy-get-namespaced-pod_0
+(defn proxy-get-namespaced-pod-with-path
   "proxy GET requests to Pod"
   [namespace name path ]
-  (:data (proxy-get-namespaced-pod_0-with-http-info namespace name path)))
+  (:data (proxy-get-namespaced-pod-with-path-with-http-info namespace name path)))
 
 (defn proxy-get-namespaced-service-with-http-info
   "proxy GET requests to Service"
@@ -2903,7 +2903,7 @@
   [namespace name ]
   (:data (proxy-get-namespaced-service-with-http-info namespace name)))
 
-(defn proxy-get-namespaced-service_0-with-http-info
+(defn proxy-get-namespaced-service-with-path-with-http-info
   "proxy GET requests to Service"
   [namespace name path ]
   (call-api "/api/v1/proxy/namespaces/{namespace}/services/{name}/{path}" :get
@@ -2915,10 +2915,10 @@
              :accepts       ["*/*"]
              :auth-names    []}))
 
-(defn proxy-get-namespaced-service_0
+(defn proxy-get-namespaced-service-with-path
   "proxy GET requests to Service"
   [namespace name path ]
-  (:data (proxy-get-namespaced-service_0-with-http-info namespace name path)))
+  (:data (proxy-get-namespaced-service-with-path-with-http-info namespace name path)))
 
 (defn proxy-get-node-with-http-info
   "proxy GET requests to Node"
@@ -2937,7 +2937,7 @@
   [name ]
   (:data (proxy-get-node-with-http-info name)))
 
-(defn proxy-get-node_0-with-http-info
+(defn proxy-get-node-with-path-with-http-info
   "proxy GET requests to Node"
   [name path ]
   (call-api "/api/v1/proxy/nodes/{name}/{path}" :get
@@ -2949,10 +2949,10 @@
              :accepts       ["*/*"]
              :auth-names    []}))
 
-(defn proxy-get-node_0
+(defn proxy-get-node-with-path
   "proxy GET requests to Node"
   [name path ]
-  (:data (proxy-get-node_0-with-http-info name path)))
+  (:data (proxy-get-node-with-path-with-http-info name path)))
 
 (defn proxy-head-namespaced-pod-with-http-info
   "proxy HEAD requests to Pod"
@@ -2971,7 +2971,7 @@
   [namespace name ]
   (:data (proxy-head-namespaced-pod-with-http-info namespace name)))
 
-(defn proxy-head-namespaced-pod_0-with-http-info
+(defn proxy-head-namespaced-pod-with-path-with-http-info
   "proxy HEAD requests to Pod"
   [namespace name path ]
   (call-api "/api/v1/proxy/namespaces/{namespace}/pods/{name}/{path}" :head
@@ -2983,10 +2983,10 @@
              :accepts       ["*/*"]
              :auth-names    []}))
 
-(defn proxy-head-namespaced-pod_0
+(defn proxy-head-namespaced-pod-with-path
   "proxy HEAD requests to Pod"
   [namespace name path ]
-  (:data (proxy-head-namespaced-pod_0-with-http-info namespace name path)))
+  (:data (proxy-head-namespaced-pod-with-path-with-http-info namespace name path)))
 
 (defn proxy-head-namespaced-service-with-http-info
   "proxy HEAD requests to Service"
@@ -3005,7 +3005,7 @@
   [namespace name ]
   (:data (proxy-head-namespaced-service-with-http-info namespace name)))
 
-(defn proxy-head-namespaced-service_0-with-http-info
+(defn proxy-head-namespaced-service-with-path-with-http-info
   "proxy HEAD requests to Service"
   [namespace name path ]
   (call-api "/api/v1/proxy/namespaces/{namespace}/services/{name}/{path}" :head
@@ -3017,10 +3017,10 @@
              :accepts       ["*/*"]
              :auth-names    []}))
 
-(defn proxy-head-namespaced-service_0
+(defn proxy-head-namespaced-service-with-path
   "proxy HEAD requests to Service"
   [namespace name path ]
-  (:data (proxy-head-namespaced-service_0-with-http-info namespace name path)))
+  (:data (proxy-head-namespaced-service-with-path-with-http-info namespace name path)))
 
 (defn proxy-head-node-with-http-info
   "proxy HEAD requests to Node"
@@ -3039,7 +3039,7 @@
   [name ]
   (:data (proxy-head-node-with-http-info name)))
 
-(defn proxy-head-node_0-with-http-info
+(defn proxy-head-node-with-path-with-http-info
   "proxy HEAD requests to Node"
   [name path ]
   (call-api "/api/v1/proxy/nodes/{name}/{path}" :head
@@ -3051,10 +3051,10 @@
              :accepts       ["*/*"]
              :auth-names    []}))
 
-(defn proxy-head-node_0
+(defn proxy-head-node-with-path
   "proxy HEAD requests to Node"
   [name path ]
-  (:data (proxy-head-node_0-with-http-info name path)))
+  (:data (proxy-head-node-with-path-with-http-info name path)))
 
 (defn proxy-options-namespaced-pod-with-http-info
   "proxy OPTIONS requests to Pod"
@@ -3073,7 +3073,7 @@
   [namespace name ]
   (:data (proxy-options-namespaced-pod-with-http-info namespace name)))
 
-(defn proxy-options-namespaced-pod_0-with-http-info
+(defn proxy-options-namespaced-pod-with-path-with-http-info
   "proxy OPTIONS requests to Pod"
   [namespace name path ]
   (call-api "/api/v1/proxy/namespaces/{namespace}/pods/{name}/{path}" :options
@@ -3085,10 +3085,10 @@
              :accepts       ["*/*"]
              :auth-names    []}))
 
-(defn proxy-options-namespaced-pod_0
+(defn proxy-options-namespaced-pod-with-path
   "proxy OPTIONS requests to Pod"
   [namespace name path ]
-  (:data (proxy-options-namespaced-pod_0-with-http-info namespace name path)))
+  (:data (proxy-options-namespaced-pod-with-path-with-http-info namespace name path)))
 
 (defn proxy-options-namespaced-service-with-http-info
   "proxy OPTIONS requests to Service"
@@ -3107,7 +3107,7 @@
   [namespace name ]
   (:data (proxy-options-namespaced-service-with-http-info namespace name)))
 
-(defn proxy-options-namespaced-service_0-with-http-info
+(defn proxy-options-namespaced-service-with-path-with-http-info
   "proxy OPTIONS requests to Service"
   [namespace name path ]
   (call-api "/api/v1/proxy/namespaces/{namespace}/services/{name}/{path}" :options
@@ -3119,10 +3119,10 @@
              :accepts       ["*/*"]
              :auth-names    []}))
 
-(defn proxy-options-namespaced-service_0
+(defn proxy-options-namespaced-service-with-path
   "proxy OPTIONS requests to Service"
   [namespace name path ]
-  (:data (proxy-options-namespaced-service_0-with-http-info namespace name path)))
+  (:data (proxy-options-namespaced-service-with-path-with-http-info namespace name path)))
 
 (defn proxy-options-node-with-http-info
   "proxy OPTIONS requests to Node"
@@ -3141,7 +3141,7 @@
   [name ]
   (:data (proxy-options-node-with-http-info name)))
 
-(defn proxy-options-node_0-with-http-info
+(defn proxy-options-node-with-path-with-http-info
   "proxy OPTIONS requests to Node"
   [name path ]
   (call-api "/api/v1/proxy/nodes/{name}/{path}" :options
@@ -3153,10 +3153,10 @@
              :accepts       ["*/*"]
              :auth-names    []}))
 
-(defn proxy-options-node_0
+(defn proxy-options-node-with-path
   "proxy OPTIONS requests to Node"
   [name path ]
-  (:data (proxy-options-node_0-with-http-info name path)))
+  (:data (proxy-options-node-with-path-with-http-info name path)))
 
 (defn proxy-post-namespaced-pod-with-http-info
   "proxy POST requests to Pod"
@@ -3175,7 +3175,7 @@
   [namespace name ]
   (:data (proxy-post-namespaced-pod-with-http-info namespace name)))
 
-(defn proxy-post-namespaced-pod_0-with-http-info
+(defn proxy-post-namespaced-pod-with-path-with-http-info
   "proxy POST requests to Pod"
   [namespace name path ]
   (call-api "/api/v1/proxy/namespaces/{namespace}/pods/{name}/{path}" :post
@@ -3187,10 +3187,10 @@
              :accepts       ["*/*"]
              :auth-names    []}))
 
-(defn proxy-post-namespaced-pod_0
+(defn proxy-post-namespaced-pod-with-path
   "proxy POST requests to Pod"
   [namespace name path ]
-  (:data (proxy-post-namespaced-pod_0-with-http-info namespace name path)))
+  (:data (proxy-post-namespaced-pod-with-path-with-http-info namespace name path)))
 
 (defn proxy-post-namespaced-service-with-http-info
   "proxy POST requests to Service"
@@ -3209,7 +3209,7 @@
   [namespace name ]
   (:data (proxy-post-namespaced-service-with-http-info namespace name)))
 
-(defn proxy-post-namespaced-service_0-with-http-info
+(defn proxy-post-namespaced-service-with-path-with-http-info
   "proxy POST requests to Service"
   [namespace name path ]
   (call-api "/api/v1/proxy/namespaces/{namespace}/services/{name}/{path}" :post
@@ -3221,10 +3221,10 @@
              :accepts       ["*/*"]
              :auth-names    []}))
 
-(defn proxy-post-namespaced-service_0
+(defn proxy-post-namespaced-service-with-path
   "proxy POST requests to Service"
   [namespace name path ]
-  (:data (proxy-post-namespaced-service_0-with-http-info namespace name path)))
+  (:data (proxy-post-namespaced-service-with-path-with-http-info namespace name path)))
 
 (defn proxy-post-node-with-http-info
   "proxy POST requests to Node"
@@ -3243,7 +3243,7 @@
   [name ]
   (:data (proxy-post-node-with-http-info name)))
 
-(defn proxy-post-node_0-with-http-info
+(defn proxy-post-node-with-path-with-http-info
   "proxy POST requests to Node"
   [name path ]
   (call-api "/api/v1/proxy/nodes/{name}/{path}" :post
@@ -3255,10 +3255,10 @@
              :accepts       ["*/*"]
              :auth-names    []}))
 
-(defn proxy-post-node_0
+(defn proxy-post-node-with-path
   "proxy POST requests to Node"
   [name path ]
-  (:data (proxy-post-node_0-with-http-info name path)))
+  (:data (proxy-post-node-with-path-with-http-info name path)))
 
 (defn proxy-put-namespaced-pod-with-http-info
   "proxy PUT requests to Pod"
@@ -3277,7 +3277,7 @@
   [namespace name ]
   (:data (proxy-put-namespaced-pod-with-http-info namespace name)))
 
-(defn proxy-put-namespaced-pod_0-with-http-info
+(defn proxy-put-namespaced-pod-with-path-with-http-info
   "proxy PUT requests to Pod"
   [namespace name path ]
   (call-api "/api/v1/proxy/namespaces/{namespace}/pods/{name}/{path}" :put
@@ -3289,10 +3289,10 @@
              :accepts       ["*/*"]
              :auth-names    []}))
 
-(defn proxy-put-namespaced-pod_0
+(defn proxy-put-namespaced-pod-with-path
   "proxy PUT requests to Pod"
   [namespace name path ]
-  (:data (proxy-put-namespaced-pod_0-with-http-info namespace name path)))
+  (:data (proxy-put-namespaced-pod-with-path-with-http-info namespace name path)))
 
 (defn proxy-put-namespaced-service-with-http-info
   "proxy PUT requests to Service"
@@ -3311,7 +3311,7 @@
   [namespace name ]
   (:data (proxy-put-namespaced-service-with-http-info namespace name)))
 
-(defn proxy-put-namespaced-service_0-with-http-info
+(defn proxy-put-namespaced-service-with-path-with-http-info
   "proxy PUT requests to Service"
   [namespace name path ]
   (call-api "/api/v1/proxy/namespaces/{namespace}/services/{name}/{path}" :put
@@ -3323,10 +3323,10 @@
              :accepts       ["*/*"]
              :auth-names    []}))
 
-(defn proxy-put-namespaced-service_0
+(defn proxy-put-namespaced-service-with-path
   "proxy PUT requests to Service"
   [namespace name path ]
-  (:data (proxy-put-namespaced-service_0-with-http-info namespace name path)))
+  (:data (proxy-put-namespaced-service-with-path-with-http-info namespace name path)))
 
 (defn proxy-put-node-with-http-info
   "proxy PUT requests to Node"
@@ -3345,7 +3345,7 @@
   [name ]
   (:data (proxy-put-node-with-http-info name)))
 
-(defn proxy-put-node_0-with-http-info
+(defn proxy-put-node-with-path-with-http-info
   "proxy PUT requests to Node"
   [name path ]
   (call-api "/api/v1/proxy/nodes/{name}/{path}" :put
@@ -3357,10 +3357,10 @@
              :accepts       ["*/*"]
              :auth-names    []}))
 
-(defn proxy-put-node_0
+(defn proxy-put-node-with-path
   "proxy PUT requests to Node"
   [name path ]
-  (:data (proxy-put-node_0-with-http-info name path)))
+  (:data (proxy-put-node-with-path-with-http-info name path)))
 
 (defn read-component-status-with-http-info
   "read the specified ComponentStatus"
@@ -4356,6 +4356,82 @@
   ([body name optional-params]
    (:data (replace-persistent-volume-status-with-http-info body name optional-params))))
 
+(defn watch-config-map-list-for-all-namespaces-with-http-info
+  "watch individual changes to a list of ConfigMap"
+  ([] (watch-config-map-list-for-all-namespaces-with-http-info nil))
+  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
+   (call-api "/api/v1/watch/configmaps" :get
+             {:path-params   {}
+              :header-params {}
+              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
+              :form-params   {}
+              :content-types ["*/*"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :auth-names    []})))
+
+(defn watch-config-map-list-for-all-namespaces
+  "watch individual changes to a list of ConfigMap"
+  ([] (watch-config-map-list-for-all-namespaces nil))
+  ([optional-params]
+   (:data (watch-config-map-list-for-all-namespaces-with-http-info optional-params))))
+
+(defn watch-endpoints-list-for-all-namespaces-with-http-info
+  "watch individual changes to a list of Endpoints"
+  ([] (watch-endpoints-list-for-all-namespaces-with-http-info nil))
+  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
+   (call-api "/api/v1/watch/endpoints" :get
+             {:path-params   {}
+              :header-params {}
+              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
+              :form-params   {}
+              :content-types ["*/*"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :auth-names    []})))
+
+(defn watch-endpoints-list-for-all-namespaces
+  "watch individual changes to a list of Endpoints"
+  ([] (watch-endpoints-list-for-all-namespaces nil))
+  ([optional-params]
+   (:data (watch-endpoints-list-for-all-namespaces-with-http-info optional-params))))
+
+(defn watch-event-list-for-all-namespaces-with-http-info
+  "watch individual changes to a list of Event"
+  ([] (watch-event-list-for-all-namespaces-with-http-info nil))
+  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
+   (call-api "/api/v1/watch/events" :get
+             {:path-params   {}
+              :header-params {}
+              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
+              :form-params   {}
+              :content-types ["*/*"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :auth-names    []})))
+
+(defn watch-event-list-for-all-namespaces
+  "watch individual changes to a list of Event"
+  ([] (watch-event-list-for-all-namespaces nil))
+  ([optional-params]
+   (:data (watch-event-list-for-all-namespaces-with-http-info optional-params))))
+
+(defn watch-limit-range-list-for-all-namespaces-with-http-info
+  "watch individual changes to a list of LimitRange"
+  ([] (watch-limit-range-list-for-all-namespaces-with-http-info nil))
+  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
+   (call-api "/api/v1/watch/limitranges" :get
+             {:path-params   {}
+              :header-params {}
+              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
+              :form-params   {}
+              :content-types ["*/*"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :auth-names    []})))
+
+(defn watch-limit-range-list-for-all-namespaces
+  "watch individual changes to a list of LimitRange"
+  ([] (watch-limit-range-list-for-all-namespaces nil))
+  ([optional-params]
+   (:data (watch-limit-range-list-for-all-namespaces-with-http-info optional-params))))
+
 (defn watch-namespace-with-http-info
   "watch changes to an object of kind Namespace"
   ([name ] (watch-namespace-with-http-info name nil))
@@ -4366,7 +4442,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn watch-namespace
@@ -4385,7 +4461,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn watch-namespace-list
@@ -4404,7 +4480,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn watch-namespaced-config-map
@@ -4415,26 +4491,7 @@
 
 (defn watch-namespaced-config-map-list-with-http-info
   "watch individual changes to a list of ConfigMap"
-  ([] (watch-namespaced-config-map-list-with-http-info nil))
-  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
-   (call-api "/api/v1/watch/configmaps" :get
-             {:path-params   {}
-              :header-params {}
-              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
-              :form-params   {}
-              :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
-              :auth-names    []})))
-
-(defn watch-namespaced-config-map-list
-  "watch individual changes to a list of ConfigMap"
-  ([] (watch-namespaced-config-map-list nil))
-  ([optional-params]
-   (:data (watch-namespaced-config-map-list-with-http-info optional-params))))
-
-(defn watch-namespaced-config-map-list_0-with-http-info
-  "watch individual changes to a list of ConfigMap"
-  ([namespace ] (watch-namespaced-config-map-list_0-with-http-info namespace nil))
+  ([namespace ] (watch-namespaced-config-map-list-with-http-info namespace nil))
   ([namespace {:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
    (call-api "/api/v1/watch/namespaces/{namespace}/configmaps" :get
              {:path-params   {"namespace" namespace }
@@ -4442,14 +4499,14 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
-(defn watch-namespaced-config-map-list_0
+(defn watch-namespaced-config-map-list
   "watch individual changes to a list of ConfigMap"
-  ([namespace ] (watch-namespaced-config-map-list_0 namespace nil))
+  ([namespace ] (watch-namespaced-config-map-list namespace nil))
   ([namespace optional-params]
-   (:data (watch-namespaced-config-map-list_0-with-http-info namespace optional-params))))
+   (:data (watch-namespaced-config-map-list-with-http-info namespace optional-params))))
 
 (defn watch-namespaced-endpoints-with-http-info
   "watch changes to an object of kind Endpoints"
@@ -4461,7 +4518,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn watch-namespaced-endpoints
@@ -4472,26 +4529,7 @@
 
 (defn watch-namespaced-endpoints-list-with-http-info
   "watch individual changes to a list of Endpoints"
-  ([] (watch-namespaced-endpoints-list-with-http-info nil))
-  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
-   (call-api "/api/v1/watch/endpoints" :get
-             {:path-params   {}
-              :header-params {}
-              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
-              :form-params   {}
-              :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
-              :auth-names    []})))
-
-(defn watch-namespaced-endpoints-list
-  "watch individual changes to a list of Endpoints"
-  ([] (watch-namespaced-endpoints-list nil))
-  ([optional-params]
-   (:data (watch-namespaced-endpoints-list-with-http-info optional-params))))
-
-(defn watch-namespaced-endpoints-list_0-with-http-info
-  "watch individual changes to a list of Endpoints"
-  ([namespace ] (watch-namespaced-endpoints-list_0-with-http-info namespace nil))
+  ([namespace ] (watch-namespaced-endpoints-list-with-http-info namespace nil))
   ([namespace {:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
    (call-api "/api/v1/watch/namespaces/{namespace}/endpoints" :get
              {:path-params   {"namespace" namespace }
@@ -4499,14 +4537,14 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
-(defn watch-namespaced-endpoints-list_0
+(defn watch-namespaced-endpoints-list
   "watch individual changes to a list of Endpoints"
-  ([namespace ] (watch-namespaced-endpoints-list_0 namespace nil))
+  ([namespace ] (watch-namespaced-endpoints-list namespace nil))
   ([namespace optional-params]
-   (:data (watch-namespaced-endpoints-list_0-with-http-info namespace optional-params))))
+   (:data (watch-namespaced-endpoints-list-with-http-info namespace optional-params))))
 
 (defn watch-namespaced-event-with-http-info
   "watch changes to an object of kind Event"
@@ -4518,7 +4556,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn watch-namespaced-event
@@ -4529,26 +4567,7 @@
 
 (defn watch-namespaced-event-list-with-http-info
   "watch individual changes to a list of Event"
-  ([] (watch-namespaced-event-list-with-http-info nil))
-  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
-   (call-api "/api/v1/watch/events" :get
-             {:path-params   {}
-              :header-params {}
-              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
-              :form-params   {}
-              :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
-              :auth-names    []})))
-
-(defn watch-namespaced-event-list
-  "watch individual changes to a list of Event"
-  ([] (watch-namespaced-event-list nil))
-  ([optional-params]
-   (:data (watch-namespaced-event-list-with-http-info optional-params))))
-
-(defn watch-namespaced-event-list_0-with-http-info
-  "watch individual changes to a list of Event"
-  ([namespace ] (watch-namespaced-event-list_0-with-http-info namespace nil))
+  ([namespace ] (watch-namespaced-event-list-with-http-info namespace nil))
   ([namespace {:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
    (call-api "/api/v1/watch/namespaces/{namespace}/events" :get
              {:path-params   {"namespace" namespace }
@@ -4556,14 +4575,14 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
-(defn watch-namespaced-event-list_0
+(defn watch-namespaced-event-list
   "watch individual changes to a list of Event"
-  ([namespace ] (watch-namespaced-event-list_0 namespace nil))
+  ([namespace ] (watch-namespaced-event-list namespace nil))
   ([namespace optional-params]
-   (:data (watch-namespaced-event-list_0-with-http-info namespace optional-params))))
+   (:data (watch-namespaced-event-list-with-http-info namespace optional-params))))
 
 (defn watch-namespaced-limit-range-with-http-info
   "watch changes to an object of kind LimitRange"
@@ -4575,7 +4594,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn watch-namespaced-limit-range
@@ -4586,26 +4605,7 @@
 
 (defn watch-namespaced-limit-range-list-with-http-info
   "watch individual changes to a list of LimitRange"
-  ([] (watch-namespaced-limit-range-list-with-http-info nil))
-  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
-   (call-api "/api/v1/watch/limitranges" :get
-             {:path-params   {}
-              :header-params {}
-              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
-              :form-params   {}
-              :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
-              :auth-names    []})))
-
-(defn watch-namespaced-limit-range-list
-  "watch individual changes to a list of LimitRange"
-  ([] (watch-namespaced-limit-range-list nil))
-  ([optional-params]
-   (:data (watch-namespaced-limit-range-list-with-http-info optional-params))))
-
-(defn watch-namespaced-limit-range-list_0-with-http-info
-  "watch individual changes to a list of LimitRange"
-  ([namespace ] (watch-namespaced-limit-range-list_0-with-http-info namespace nil))
+  ([namespace ] (watch-namespaced-limit-range-list-with-http-info namespace nil))
   ([namespace {:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
    (call-api "/api/v1/watch/namespaces/{namespace}/limitranges" :get
              {:path-params   {"namespace" namespace }
@@ -4613,14 +4613,14 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
-(defn watch-namespaced-limit-range-list_0
+(defn watch-namespaced-limit-range-list
   "watch individual changes to a list of LimitRange"
-  ([namespace ] (watch-namespaced-limit-range-list_0 namespace nil))
+  ([namespace ] (watch-namespaced-limit-range-list namespace nil))
   ([namespace optional-params]
-   (:data (watch-namespaced-limit-range-list_0-with-http-info namespace optional-params))))
+   (:data (watch-namespaced-limit-range-list-with-http-info namespace optional-params))))
 
 (defn watch-namespaced-persistent-volume-claim-with-http-info
   "watch changes to an object of kind PersistentVolumeClaim"
@@ -4632,7 +4632,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn watch-namespaced-persistent-volume-claim
@@ -4651,7 +4651,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn watch-namespaced-persistent-volume-claim-list
@@ -4659,25 +4659,6 @@
   ([namespace ] (watch-namespaced-persistent-volume-claim-list namespace nil))
   ([namespace optional-params]
    (:data (watch-namespaced-persistent-volume-claim-list-with-http-info namespace optional-params))))
-
-(defn watch-namespaced-persistent-volume-claim-list_0-with-http-info
-  "watch individual changes to a list of PersistentVolumeClaim"
-  ([] (watch-namespaced-persistent-volume-claim-list_0-with-http-info nil))
-  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
-   (call-api "/api/v1/watch/persistentvolumeclaims" :get
-             {:path-params   {}
-              :header-params {}
-              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
-              :form-params   {}
-              :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
-              :auth-names    []})))
-
-(defn watch-namespaced-persistent-volume-claim-list_0
-  "watch individual changes to a list of PersistentVolumeClaim"
-  ([] (watch-namespaced-persistent-volume-claim-list_0 nil))
-  ([optional-params]
-   (:data (watch-namespaced-persistent-volume-claim-list_0-with-http-info optional-params))))
 
 (defn watch-namespaced-pod-with-http-info
   "watch changes to an object of kind Pod"
@@ -4689,7 +4670,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn watch-namespaced-pod
@@ -4708,7 +4689,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn watch-namespaced-pod-list
@@ -4716,25 +4697,6 @@
   ([namespace ] (watch-namespaced-pod-list namespace nil))
   ([namespace optional-params]
    (:data (watch-namespaced-pod-list-with-http-info namespace optional-params))))
-
-(defn watch-namespaced-pod-list_0-with-http-info
-  "watch individual changes to a list of Pod"
-  ([] (watch-namespaced-pod-list_0-with-http-info nil))
-  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
-   (call-api "/api/v1/watch/pods" :get
-             {:path-params   {}
-              :header-params {}
-              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
-              :form-params   {}
-              :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
-              :auth-names    []})))
-
-(defn watch-namespaced-pod-list_0
-  "watch individual changes to a list of Pod"
-  ([] (watch-namespaced-pod-list_0 nil))
-  ([optional-params]
-   (:data (watch-namespaced-pod-list_0-with-http-info optional-params))))
 
 (defn watch-namespaced-pod-template-with-http-info
   "watch changes to an object of kind PodTemplate"
@@ -4746,7 +4708,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn watch-namespaced-pod-template
@@ -4765,7 +4727,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn watch-namespaced-pod-template-list
@@ -4773,25 +4735,6 @@
   ([namespace ] (watch-namespaced-pod-template-list namespace nil))
   ([namespace optional-params]
    (:data (watch-namespaced-pod-template-list-with-http-info namespace optional-params))))
-
-(defn watch-namespaced-pod-template-list_0-with-http-info
-  "watch individual changes to a list of PodTemplate"
-  ([] (watch-namespaced-pod-template-list_0-with-http-info nil))
-  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
-   (call-api "/api/v1/watch/podtemplates" :get
-             {:path-params   {}
-              :header-params {}
-              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
-              :form-params   {}
-              :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
-              :auth-names    []})))
-
-(defn watch-namespaced-pod-template-list_0
-  "watch individual changes to a list of PodTemplate"
-  ([] (watch-namespaced-pod-template-list_0 nil))
-  ([optional-params]
-   (:data (watch-namespaced-pod-template-list_0-with-http-info optional-params))))
 
 (defn watch-namespaced-replication-controller-with-http-info
   "watch changes to an object of kind ReplicationController"
@@ -4803,7 +4746,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn watch-namespaced-replication-controller
@@ -4822,7 +4765,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn watch-namespaced-replication-controller-list
@@ -4830,25 +4773,6 @@
   ([namespace ] (watch-namespaced-replication-controller-list namespace nil))
   ([namespace optional-params]
    (:data (watch-namespaced-replication-controller-list-with-http-info namespace optional-params))))
-
-(defn watch-namespaced-replication-controller-list_0-with-http-info
-  "watch individual changes to a list of ReplicationController"
-  ([] (watch-namespaced-replication-controller-list_0-with-http-info nil))
-  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
-   (call-api "/api/v1/watch/replicationcontrollers" :get
-             {:path-params   {}
-              :header-params {}
-              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
-              :form-params   {}
-              :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
-              :auth-names    []})))
-
-(defn watch-namespaced-replication-controller-list_0
-  "watch individual changes to a list of ReplicationController"
-  ([] (watch-namespaced-replication-controller-list_0 nil))
-  ([optional-params]
-   (:data (watch-namespaced-replication-controller-list_0-with-http-info optional-params))))
 
 (defn watch-namespaced-resource-quota-with-http-info
   "watch changes to an object of kind ResourceQuota"
@@ -4860,7 +4784,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn watch-namespaced-resource-quota
@@ -4879,7 +4803,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn watch-namespaced-resource-quota-list
@@ -4887,25 +4811,6 @@
   ([namespace ] (watch-namespaced-resource-quota-list namespace nil))
   ([namespace optional-params]
    (:data (watch-namespaced-resource-quota-list-with-http-info namespace optional-params))))
-
-(defn watch-namespaced-resource-quota-list_0-with-http-info
-  "watch individual changes to a list of ResourceQuota"
-  ([] (watch-namespaced-resource-quota-list_0-with-http-info nil))
-  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
-   (call-api "/api/v1/watch/resourcequotas" :get
-             {:path-params   {}
-              :header-params {}
-              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
-              :form-params   {}
-              :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
-              :auth-names    []})))
-
-(defn watch-namespaced-resource-quota-list_0
-  "watch individual changes to a list of ResourceQuota"
-  ([] (watch-namespaced-resource-quota-list_0 nil))
-  ([optional-params]
-   (:data (watch-namespaced-resource-quota-list_0-with-http-info optional-params))))
 
 (defn watch-namespaced-secret-with-http-info
   "watch changes to an object of kind Secret"
@@ -4917,7 +4822,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn watch-namespaced-secret
@@ -4936,7 +4841,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn watch-namespaced-secret-list
@@ -4944,25 +4849,6 @@
   ([namespace ] (watch-namespaced-secret-list namespace nil))
   ([namespace optional-params]
    (:data (watch-namespaced-secret-list-with-http-info namespace optional-params))))
-
-(defn watch-namespaced-secret-list_0-with-http-info
-  "watch individual changes to a list of Secret"
-  ([] (watch-namespaced-secret-list_0-with-http-info nil))
-  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
-   (call-api "/api/v1/watch/secrets" :get
-             {:path-params   {}
-              :header-params {}
-              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
-              :form-params   {}
-              :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
-              :auth-names    []})))
-
-(defn watch-namespaced-secret-list_0
-  "watch individual changes to a list of Secret"
-  ([] (watch-namespaced-secret-list_0 nil))
-  ([optional-params]
-   (:data (watch-namespaced-secret-list_0-with-http-info optional-params))))
 
 (defn watch-namespaced-service-with-http-info
   "watch changes to an object of kind Service"
@@ -4974,7 +4860,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn watch-namespaced-service
@@ -4993,7 +4879,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn watch-namespaced-service-account
@@ -5012,7 +4898,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn watch-namespaced-service-account-list
@@ -5020,25 +4906,6 @@
   ([namespace ] (watch-namespaced-service-account-list namespace nil))
   ([namespace optional-params]
    (:data (watch-namespaced-service-account-list-with-http-info namespace optional-params))))
-
-(defn watch-namespaced-service-account-list_0-with-http-info
-  "watch individual changes to a list of ServiceAccount"
-  ([] (watch-namespaced-service-account-list_0-with-http-info nil))
-  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
-   (call-api "/api/v1/watch/serviceaccounts" :get
-             {:path-params   {}
-              :header-params {}
-              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
-              :form-params   {}
-              :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
-              :auth-names    []})))
-
-(defn watch-namespaced-service-account-list_0
-  "watch individual changes to a list of ServiceAccount"
-  ([] (watch-namespaced-service-account-list_0 nil))
-  ([optional-params]
-   (:data (watch-namespaced-service-account-list_0-with-http-info optional-params))))
 
 (defn watch-namespaced-service-list-with-http-info
   "watch individual changes to a list of Service"
@@ -5050,7 +4917,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn watch-namespaced-service-list
@@ -5058,25 +4925,6 @@
   ([namespace ] (watch-namespaced-service-list namespace nil))
   ([namespace optional-params]
    (:data (watch-namespaced-service-list-with-http-info namespace optional-params))))
-
-(defn watch-namespaced-service-list_0-with-http-info
-  "watch individual changes to a list of Service"
-  ([] (watch-namespaced-service-list_0-with-http-info nil))
-  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
-   (call-api "/api/v1/watch/services" :get
-             {:path-params   {}
-              :header-params {}
-              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
-              :form-params   {}
-              :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
-              :auth-names    []})))
-
-(defn watch-namespaced-service-list_0
-  "watch individual changes to a list of Service"
-  ([] (watch-namespaced-service-list_0 nil))
-  ([optional-params]
-   (:data (watch-namespaced-service-list_0-with-http-info optional-params))))
 
 (defn watch-node-with-http-info
   "watch changes to an object of kind Node"
@@ -5088,7 +4936,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn watch-node
@@ -5107,7 +4955,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn watch-node-list
@@ -5126,7 +4974,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn watch-persistent-volume
@@ -5134,6 +4982,25 @@
   ([name ] (watch-persistent-volume name nil))
   ([name optional-params]
    (:data (watch-persistent-volume-with-http-info name optional-params))))
+
+(defn watch-persistent-volume-claim-list-for-all-namespaces-with-http-info
+  "watch individual changes to a list of PersistentVolumeClaim"
+  ([] (watch-persistent-volume-claim-list-for-all-namespaces-with-http-info nil))
+  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
+   (call-api "/api/v1/watch/persistentvolumeclaims" :get
+             {:path-params   {}
+              :header-params {}
+              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
+              :form-params   {}
+              :content-types ["*/*"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :auth-names    []})))
+
+(defn watch-persistent-volume-claim-list-for-all-namespaces
+  "watch individual changes to a list of PersistentVolumeClaim"
+  ([] (watch-persistent-volume-claim-list-for-all-namespaces nil))
+  ([optional-params]
+   (:data (watch-persistent-volume-claim-list-for-all-namespaces-with-http-info optional-params))))
 
 (defn watch-persistent-volume-list-with-http-info
   "watch individual changes to a list of PersistentVolume"
@@ -5145,7 +5012,7 @@
               :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
               :form-params   {}
               :content-types ["*/*"]
-              :accepts       ["application/json" "application/json;stream=watch" "application/vnd.kubernetes.protobuf" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
               :auth-names    []})))
 
 (defn watch-persistent-volume-list
@@ -5153,4 +5020,137 @@
   ([] (watch-persistent-volume-list nil))
   ([optional-params]
    (:data (watch-persistent-volume-list-with-http-info optional-params))))
+
+(defn watch-pod-list-for-all-namespaces-with-http-info
+  "watch individual changes to a list of Pod"
+  ([] (watch-pod-list-for-all-namespaces-with-http-info nil))
+  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
+   (call-api "/api/v1/watch/pods" :get
+             {:path-params   {}
+              :header-params {}
+              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
+              :form-params   {}
+              :content-types ["*/*"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :auth-names    []})))
+
+(defn watch-pod-list-for-all-namespaces
+  "watch individual changes to a list of Pod"
+  ([] (watch-pod-list-for-all-namespaces nil))
+  ([optional-params]
+   (:data (watch-pod-list-for-all-namespaces-with-http-info optional-params))))
+
+(defn watch-pod-template-list-for-all-namespaces-with-http-info
+  "watch individual changes to a list of PodTemplate"
+  ([] (watch-pod-template-list-for-all-namespaces-with-http-info nil))
+  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
+   (call-api "/api/v1/watch/podtemplates" :get
+             {:path-params   {}
+              :header-params {}
+              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
+              :form-params   {}
+              :content-types ["*/*"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :auth-names    []})))
+
+(defn watch-pod-template-list-for-all-namespaces
+  "watch individual changes to a list of PodTemplate"
+  ([] (watch-pod-template-list-for-all-namespaces nil))
+  ([optional-params]
+   (:data (watch-pod-template-list-for-all-namespaces-with-http-info optional-params))))
+
+(defn watch-replication-controller-list-for-all-namespaces-with-http-info
+  "watch individual changes to a list of ReplicationController"
+  ([] (watch-replication-controller-list-for-all-namespaces-with-http-info nil))
+  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
+   (call-api "/api/v1/watch/replicationcontrollers" :get
+             {:path-params   {}
+              :header-params {}
+              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
+              :form-params   {}
+              :content-types ["*/*"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :auth-names    []})))
+
+(defn watch-replication-controller-list-for-all-namespaces
+  "watch individual changes to a list of ReplicationController"
+  ([] (watch-replication-controller-list-for-all-namespaces nil))
+  ([optional-params]
+   (:data (watch-replication-controller-list-for-all-namespaces-with-http-info optional-params))))
+
+(defn watch-resource-quota-list-for-all-namespaces-with-http-info
+  "watch individual changes to a list of ResourceQuota"
+  ([] (watch-resource-quota-list-for-all-namespaces-with-http-info nil))
+  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
+   (call-api "/api/v1/watch/resourcequotas" :get
+             {:path-params   {}
+              :header-params {}
+              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
+              :form-params   {}
+              :content-types ["*/*"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :auth-names    []})))
+
+(defn watch-resource-quota-list-for-all-namespaces
+  "watch individual changes to a list of ResourceQuota"
+  ([] (watch-resource-quota-list-for-all-namespaces nil))
+  ([optional-params]
+   (:data (watch-resource-quota-list-for-all-namespaces-with-http-info optional-params))))
+
+(defn watch-secret-list-for-all-namespaces-with-http-info
+  "watch individual changes to a list of Secret"
+  ([] (watch-secret-list-for-all-namespaces-with-http-info nil))
+  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
+   (call-api "/api/v1/watch/secrets" :get
+             {:path-params   {}
+              :header-params {}
+              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
+              :form-params   {}
+              :content-types ["*/*"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :auth-names    []})))
+
+(defn watch-secret-list-for-all-namespaces
+  "watch individual changes to a list of Secret"
+  ([] (watch-secret-list-for-all-namespaces nil))
+  ([optional-params]
+   (:data (watch-secret-list-for-all-namespaces-with-http-info optional-params))))
+
+(defn watch-service-account-list-for-all-namespaces-with-http-info
+  "watch individual changes to a list of ServiceAccount"
+  ([] (watch-service-account-list-for-all-namespaces-with-http-info nil))
+  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
+   (call-api "/api/v1/watch/serviceaccounts" :get
+             {:path-params   {}
+              :header-params {}
+              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
+              :form-params   {}
+              :content-types ["*/*"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :auth-names    []})))
+
+(defn watch-service-account-list-for-all-namespaces
+  "watch individual changes to a list of ServiceAccount"
+  ([] (watch-service-account-list-for-all-namespaces nil))
+  ([optional-params]
+   (:data (watch-service-account-list-for-all-namespaces-with-http-info optional-params))))
+
+(defn watch-service-list-for-all-namespaces-with-http-info
+  "watch individual changes to a list of Service"
+  ([] (watch-service-list-for-all-namespaces-with-http-info nil))
+  ([{:keys [pretty label-selector field-selector watch resource-version timeout-seconds ]}]
+   (call-api "/api/v1/watch/services" :get
+             {:path-params   {}
+              :header-params {}
+              :query-params  {"pretty" pretty "labelSelector" label-selector "fieldSelector" field-selector "watch" watch "resourceVersion" resource-version "timeoutSeconds" timeout-seconds }
+              :form-params   {}
+              :content-types ["*/*"]
+              :accepts       ["application/json" "application/yaml" "application/vnd.kubernetes.protobuf" "application/json;stream=watch" "application/vnd.kubernetes.protobuf;stream=watch"]
+              :auth-names    []})))
+
+(defn watch-service-list-for-all-namespaces
+  "watch individual changes to a list of Service"
+  ([] (watch-service-list-for-all-namespaces nil))
+  ([optional-params]
+   (:data (watch-service-list-for-all-namespaces-with-http-info optional-params))))
 
